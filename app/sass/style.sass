@@ -1,0 +1,836 @@
+@import "vars"
+@import "fonts"
+
+
+//start global style
+.content 
+    font-size: 16px 
+    font-family: "Montserrat", sans-serif
+    font-weight: 400
+    line-height: 1.5
+    padding-bottom: 60px
+.container-fluid 
+    width: 1350px 
+    max-width: 100% 
+.container-fluid--xs
+    width: 956px 
+    max-width: 100%
+.button
+    border-radius: 40px
+    background: linear-gradient(90deg, #6131AC 0%, #6018D6 50%, #6002FC 100%)
+    padding: 10px 36px
+    cursor: pointer
+    color: #fff 
+    text-decoration: none
+.button:hover 
+    background: #6018d6
+    color: #fff
+.input,
+.textarea 
+    background: #F0F6F7
+    border: none
+    height: 44px
+    padding: 0 20px
+    width: 100%
+    outline: none
+.input-search 
+    padding-left: 57px
+    background-image: url('../img/search.svg')
+    background-repeat: no-repeat
+    background-position: left 24px center
+.textarea 
+    height: 160px
+    padding-top: 15px
+//end global style 
+
+//start main screen 
+.main-screen 
+    background: #000
+    background-image: url('../img/main-screen-bg.png')
+    background-repeat: no-repeat
+    background-position: top right
+    padding-top: 65px
+    color: #fff
+.main-screen__text
+    width: 722px 
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .button 
+        margin-top: 59px
+.main-screen__title
+    margin-bottom: 30px
+.tabs 
+    display: flex 
+    justify-content: center
+    margin-top: 100px
+.tab 
+    padding: 10px 40px
+    font-size: 36px
+    font-weight: 700
+    border-top-left-radius: 15px 
+    border-top-right-radius: 15px
+    cursor: pointer
+.tab.active 
+    background: #fff
+    color: $purple
+//end main screen
+
+//start search style
+.search-section 
+    padding-top: 70px 
+    padding-bottom: 90px
+.search 
+    margin-left: auto 
+    margin-right: auto 
+    padding: 40px 50px
+    border-radius: 20px
+    background: #FFF
+    box-shadow: 0px 1px 19px 0px rgba(0, 0, 0, 0.25) 
+    width: 1120px 
+    max-width: 100%
+.search__row
+    display: flex 
+    justify-content: space-between
+.search-slide-col 
+    width: 250px
+    margin-left: 38px
+.search-col
+    width: 100%
+.search-col-row
+    display: flex
+    justify-content: space-between
+    .select 
+        width: 48%
+.select 
+    margin-top: 22px
+    height: 44px
+    background: #F0F6F7
+    border: none
+    padding: 0 21px
+    webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    outline: none
+    color: #454545
+    background-image: url('../img/select-arrow.svg')
+    background-repeat: no-repeat
+    background-position: right 22px center
+    cursor: pointer
+.search-slider-row
+    display: flex 
+    justify-content: space-between
+    input 
+        width: 48%
+.slider-rang-wrapper
+    height: 44px
+    p 
+        margin-bottom: 10px
+        line-height: 1
+.search-slider-row
+    margin-top: 22px
+    .input 
+        width: 48%
+.ui-slider-horizontal
+    height: 9px
+    background: #F0F6F7
+    border: none
+.ui-widget.ui-widget-content
+    border: none
+.ui-slider .ui-slider-range
+    background: $purple
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active
+    background: $purple
+    border: none
+    border-radius: 50%
+    outline: none
+//end search style
+
+//start rating row style 
+.rating-row 
+    padding-bottom: 26px
+    .container-fluid 
+        display: flex 
+        align-items: center 
+        justify-content: flex-end
+        img 
+            margin-left: 15px
+.rating-row-wrapper 
+    cursor: pointer 
+    display: flex 
+    align-items: center 
+//end rating row style
+
+//start venues list style
+.venues-list
+    padding-bottom: 40px
+    .col-lg-6 
+        margin-bottom: 30px
+.venue-item
+    background: #000
+    border-radius: 15px 
+    .slider-image
+        width: 100%
+        height: 300px 
+        object-fit: cover 
+        object-position: center
+        border-top-left-radius: 15px 
+        border-top-right-radius: 15px
+.prev,
+.next
+    color: red
+    font-size: 50px
+    position: absolute 
+    top: 50% 
+    transform: translateY(-50%)
+    z-index: 99
+    color: red 
+    font-size: 5px
+    width: 40px 
+    height: 40px 
+    border-radius: 50% 
+    background: #6008F3
+    cursor: pointer
+    display: flex 
+    justify-content: center 
+    align-items: center
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.50)
+    img 
+        width: 10px
+        height: auto
+.prev 
+    left: 24px
+.next 
+    right: 24px
+.slider-wrapper
+    position: relative
+.venue-item__content
+    padding: 25px
+    color: #fff
+    padding-bottom: 40px
+.reviews-row
+    display: flex
+    justify-content: space-between
+    position: relative
+.reviews-header
+    display: flex 
+    align-content: center 
+    img 
+        width: 15px 
+        height: auto
+        margin: 0 7px
+.rating__stars
+    display: flex 
+    align-items: center
+    i
+        font-size: 15px 
+        height: auto
+        margin-right: 3px
+        color: $yellow
+.reviews__footer
+    display: flex 
+    align-items: center
+    margin-top: 5px
+.rating__quantity
+    margin-right: 5px
+.rating__quantity
+    font-size: 20px 
+    font-weight: 600 
+    color: #D9D9D9
+.reviews-col
+    cursor: pointer
+.reviews-row
+    margin-bottom: 15px
+.venue-item__title
+    font-size: 30px 
+    font-weight: 600
+.tag 
+    font-size: 12px
+    background: rgba(#fff, .15)
+    padding: 5px 14px 
+    border-radius: 20px
+    margin: 3px
+.tags-row
+    display: flex 
+    flex-wrap: wrap
+    padding-top: 10px 
+    padding-bottom: 10px
+    margin-left: -3px
+.venue-item__info-item
+    display: flex 
+    align-items: center
+    img
+        display: block
+        margin-right: 11px
+.venue-item__info-row
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    margin-top: 17px
+    margin-bottom: 30px
+.venue-item__footer
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+.social
+    display: flex 
+    align-items: center
+    a 
+        text-decoration: none 
+        display: block
+        margin-right: 9px
+
+//start rating popup
+.reviews-col
+    position: relative
+.rating-popup
+    position: absolute 
+    top: 120% 
+    left: 0
+    background: #F0F6F7
+    width: 415px 
+    max-width: 90vw
+    z-index: 999
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    padding: 20px 
+    color: #000
+.rating-popup__header
+    text-align: center
+    padding-bottom: 13px 
+    border-bottom: 1px solid rgba(#000, .2) 
+    .rating__stars
+        display: flex 
+        justify-content: center
+        margin-top: 8px
+        img 
+            width: 25px
+.rating-popup__header-top
+    display: flex
+    justify-content: center
+    align-items: center
+.rating-popup__quantity
+    font-size: 24px 
+    font-weight: 700
+    margin-right: 5px
+.rating-popup-content
+    padding-top: 22px
+    padding-bottom: 22px
+    border-bottom: 1px solid rgba(#000, .2)
+.rating-popup-row
+    display: flex 
+    justify-content: space-between
+    align-items: center
+.rating-popup-row__stars
+    display: flex 
+    align-items: center
+    min-width: 110px
+    i
+        margin-right: 3px
+        color: $yellow
+.rating-popup-row__quantity
+    font-size: 14px
+.progressbar
+    width: 200px
+    height: 5px
+    border: none
+    box-shadow: none
+    margin: 0
+.ui-widget-header
+    background: #F1A615
+    border: none
+    border-radius: 10px
+.ui-progressbar .ui-progressbar-value
+    margin: 0
+.ui-widget.ui-widget-content
+    background: #D9D9D9
+    border-radius: 10px
+.rating-popup:before 
+    content: ''
+    width: 0
+    height: 0
+    border-left: 12.5px solid transparent
+    border-right: 12.5px solid transparent
+    border-bottom: 20px solid #f0f6f7
+    position: absolute 
+    top: 0 
+    left: 15%
+    transform: translateY(-80%)
+.rating-popup__footer
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding-top: 15px
+.review-link
+    display: flex
+    align-items: center
+    color: #212121
+    text-decoration: underline
+.review-link
+    img 
+        display: block
+        margin-left: 6px
+.review-link:hover 
+    color: #000
+.rating-popup
+    display: none
+.reviews-col:hover .rating-popup
+    display: block
+//end rating popup
+
+.tab__item 
+    display: none
+.tab__item:first-child 
+    display: block
+
+//start modal style
+.modal-window
+    position: fixed 
+    top: 0 
+    left: 0 
+    width: 100vw 
+    height: 100vh 
+    overflow-y: auto
+    background: rgba(#000, .42)
+    padding-top: 60px
+    z-index: 999
+    display: none
+.modal-window__content
+    background: #fff 
+    width: 800px 
+    max-width: 90vw
+    border-radius: 19px
+    margin-left: auto 
+    margin-right: auto
+    padding: 50px
+.modal-title
+    text-align: center
+    font-size: 18px 
+    font-weight: 600
+    margin-bottom: 43px   
+.input-row
+    display: flex 
+    justify-content: space-between
+    .input-item 
+        width: 48%
+.input-item
+    margin-bottom: 25px
+.label 
+    margin-top: 0 
+    margin-bottom: 12px 
+    color: #454545
+.modal-reviews__item-header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+.modal-review__item-content
+    display: flex
+    align-items: center
+.modal-review__item-stars
+    min-width: 230px
+.modal-reviews__item-header
+    padding-top: 20px 
+    padding-bottom: 20px
+    border-bottom: 1px solid rgba(#000, .2)
+.modal-review__item-content
+    padding-top: 20px
+.modal-reviews__item-value
+    font-size: 24px 
+    font-weight: 600
+.modal-review__footer
+    padding-top: 80px
+.modal-review__footer
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+.modal-review__footer-title
+    font-size: 24px 
+    font-weight: 600 
+    color: #454545
+    span 
+        font-size: 30px
+//end modal style
+
+
+//start rating style
+rating input[type=radio]
+    -webkit-appearance: none
+    margin: 0
+    box-shadow: none
+    cursor: pointer
+rating input[type=radio]::after
+    font-family: 'Font Awesome 5 Free'
+    content: '\f005'
+    font-weight: 900
+    font-size: 16px
+rating input[type=radio]:invalid::after
+    color: #ddd
+rating:hover input[type=radio]:invalid::after,
+rating:focus-within input[type=radio]:invalid::after
+    color: #888
+rating:hover input[type=radio]:hover ~ input[type=radio]:invalid::after,
+rating input[type=radio]:focus ~ input[type=radio]:invalid::after
+    color: #ddd
+rating input[type=radio]:valid
+    color: orange
+rating input[type=radio]:checked ~ input[type=radio]:not(:checked)::after
+    color: #ccc
+    font-family: 'Font Awesome 5 Free'
+    content: '\f005'
+//end rating style
+.center-button 
+    display: flex 
+    justify-content: center
+.modal-reviews__item-title
+    font-size: 18px 
+    font-weight: 600
+.reviews-col:nth-child(2)
+    .rating-popup
+        left: -200%
+    .rating-popup:before
+        left: 85%
+//start sign-in style 
+.sign-in 
+    width: 480px 
+    max-width: 90vw
+//end sign-in style
+
+//start dashboard style
+.dashboard__section
+    padding-top: 40px 
+    padding-bottom: 40px
+.dashboard-section__header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding-bottom: 13px
+.dashboard-section__title
+    font-size: 24px 
+    font-weight: 600
+.dashboard-section__button
+    color: #6106F6
+    cursor: pointer
+.dashboard__section-items-list
+    display: flex
+    flex-wrap: wrap
+    margin-left: -0.5% 
+    margin-right: -0.5%
+.dashboard__section-item
+    width: 13.2% 
+    margin: 0.5%
+.dashboard__section-item__img
+    width: 100%
+    height: 121px 
+    object-fit: cover 
+    object-position: center
+.dashboard__section-item__title
+    font-weight: 600
+    margin-top: 10px
+.dashboard-section__buttons 
+    display: flex
+.dashboard-section__button 
+    margin-left: 50px
+.dashboard__instruments
+    .dashboard__section-item 
+        text-align: center
+    .dashboard__section-item__img
+        object-fit: contain 
+        object-position: center
+        margin-bottom: 10px
+//end dashboard style
+
+//tag venye review 
+.modal-review__footer-end
+    display: flex 
+    justify-content: flex-end
+.tag-venues-modal
+    .modal-window__content
+        width: 90vw
+    .row 
+        margin-top: 30px
+        .col-lg-6 
+            margin-bottom: 30px
+.tag-venue-modal-btn
+    width: 100%
+    display: flex 
+    justify-content: center
+    background: #454545
+    img 
+        margin-right: 10px
+
+
+.tag-venue-modal-btn.active
+    background: #fff 
+    color: $purple
+    font-weight: 600
+    .check 
+        display: block
+    .mic 
+        display: none
+//tag venye review 
+
+//start instruments style 
+.instruments__header
+    padding-top: 75px 
+    text-align: center
+.page-title
+    font-size: 60px 
+    font-weight: 700
+.checkbox-wrapper
+    display: flex 
+    align-items: center
+.search-col-row
+    display: flex 
+    align-items: center
+.label 
+    margin-bottom: 0
+.checkbox-wrapper 
+    margin-top: 22px
+.checkbox
+    width: 25px 
+    height: 25px 
+    background: #F0F6F7
+    margin-left: 10px
+.search-col-row .select.select-lg
+    width: 80%
+.price-input
+    background-image: url('../img/dol.svg')
+    background-repeat: no-repeat 
+    background-position: left 10px center
+    padding-left: 30px
+.instrument-item
+    border-radius: 5px
+    background: #FFF
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25)
+    padding: 25px 20px
+    padding-bottom: 50px
+    .button 
+        width: 100%
+        display: flex
+        justify-content: center 
+        align-items: center
+.instrument-img
+    width: 100% 
+    height: 140px 
+    object-fit: contain 
+    object-position: center
+.instruments-list
+    .col-lg-3 
+        margin-bottom: 40px
+    .slick-dots 
+        list-style: none
+        display: flex
+        justify-content: center 
+        align-items: center
+        padding: 0 
+        margin: 0
+        li 
+            margin: 0 3px
+            button 
+                font-size: 0
+                width: 8px 
+                height: 8px 
+                background: #D9D9D9
+                border-radius: 50%
+                border: none
+                padding: 0
+                outline: none
+        .slick-active 
+            button 
+                background: $purple
+.instrument-item__title
+    font-weight: 600
+    margin-top: 20px 
+    margin-bottom: 10px
+    text-transform: uppercase
+.instrument-review
+    padding-top: 0px 
+    padding-bottom: 30px
+//end instruments style 
+
+//start pagination style
+.pagination-wrapper
+    display: flex 
+    justify-content: center 
+    align-items: center
+    padding-top: 30px 
+    padding-bottom: 30px
+.pagination__btn
+    width: 40px 
+    height: 40px 
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    border-radius: 50% 
+    background: #B4B4B4
+    margin: 0 15px
+    cursor: pointer
+.pagination__btn:hover,
+.pagination__btn.active 
+    background: $purple
+.pagination
+    display: flex 
+    align-items: center
+.pagination__link 
+    margin: 0 7.5px
+    font-size: 20px
+    color: #000 
+    text-decoration: none
+.pagination__link.active
+    font-weight: 600
+.pagination__link:hover 
+    color: $purple
+//end pagination style 
+.instrument-review-modal
+    .rating-popup-content
+        border-bottom: none
+    .rating-popup__header-top
+        justify-content: flex-start
+.instrument-modal-title
+    font-size: 24px 
+    font-weight: 600
+    text-transform: uppercase
+.rating__quantity--black
+    color: #000
+.instrument-review__item-header 
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding-bottom: 10px
+.user-info 
+    display: flex 
+    align-items: center
+.profile-name
+    font-weight: 600
+    margin-left: 12px
+.instrument-review__item
+    border: 1px solid #D9D9D9
+    padding: 10px 20px
+    border-radius: 10px
+    margin-top: 17px
+    padding-top: 15px
+    margin-top: 17px
+.button--black
+    background: #454545
+    img 
+        margin-right: 10px
+.button img 
+    margin-right: 10px
+
+//start review style 
+.reviews-section
+    padding-top: 60px
+    padding-bottom: 60px
+.rev-top 
+    background: #F0F6F7
+    padding: 20px
+    border-radius: 15px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    margin-top: 15px
+    .review-link 
+        font-size: 14px
+    .button 
+        padding-left: 15px 
+        padding-right: 15px
+
+    .rating__stars
+        justify-content: center
+        padding-top: 10px
+        i 
+            font-size: 24px
+//end revirw style 
+
+//start education 
+.main-screen__education
+    padding-bottom: 200px
+    background: url('../img/ed.png')
+    background-size: cover 
+    background-position: right
+    padding-top: 80px
+.education-item 
+    margin-top: 40px
+    display: flex 
+    align-items: center
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+.education-img
+    height: 100%
+    min-height: 100% 
+    width: 400px 
+    min-width: 400px
+    object-fit: cover 
+    object-position: center
+.education-item__content
+    padding: 27px
+.education-item__title
+    font-size: 30px 
+    font-weight: 600 
+    text-transform: uppercase
+    margin-bottom: 10px
+.education-item__sub-title 
+    font-weight: 600 
+    margin-bottom: 10px
+.education-item__footer 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    .instrument-review
+        padding-bottom: 0
+.label 
+    margin-bottom: 5px
+.file-input
+    display: none
+.file-label
+    width: 100%
+    height: 228px 
+    background: #F5F5F5
+    border-radius: 10px
+    margin-top: 20px
+    display: flex 
+    flex-direction: column 
+    align-items: center
+    padding-top: 25px
+    margin-bottom: 20px
+    img 
+        margin-bottom: 10px
+    p 
+        color: #969696
+        width: 310px 
+        margin-left: auto 
+        margin-right: auto 
+        max-width: 100%
+        text-align: center
+    .button 
+        background: transparent 
+        border: 1px solid $purple 
+        color: $purple
+.item-inst
+    display: flex 
+    align-items: center
+    box-shadow: 0px 0px 43px 0px rgba(123, 138, 144, 0.21)
+    background: #fff 
+    padding: 20px
+    border-radius: 15px
+    justify-content: space-between
+    margin-bottom: 10px
+.item-inst-title
+    font-weight: 600
+.button--red
+    color: #F60606
+    background: transparent 
+    border: 1px solid #F60606
+.button--red:hover 
+    background: #F60606
+//end education 
+
+@import "media"
+
+
+
+

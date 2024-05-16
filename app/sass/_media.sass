@@ -1,0 +1,257 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	/**/
+	.dashboard__section-item
+		width: 23.5%
+	.education-item 
+		font-size: 14px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1140px)
+	.education-item
+		flex-direction: column
+	.education-img
+		width: 100% 
+		min-width: 100% 
+		height: 500px
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.main-screen__title
+		width: 100%
+	.tab
+		font-size: 24px
+	.dashboard__section-item
+		width: 48%
+	.reviews-section
+		.row 
+			display: flex 
+			flex-direction: column-reverse
+
+	
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.search__row
+		flex-direction: column
+	.search-slide-col
+		margin-left: 0
+		margin-top: 22px
+		width: 100%
+	.slider-rang-wrapper p
+		margin-bottom: 20px
+	.tab
+		font-size: 4.4vw
+		padding-left: 6vw 
+		padding-right: 6vw
+	.main-screen__text .button
+		margin-top: 10px
+	.main-screen
+		padding-top: 50px
+	.main-screen
+		background-position: top right -85vw
+	.tabs 
+		margin-top: 70px
+	.search 
+		padding: 40px 20px
+	.search-section
+		padding-top: 60px 
+		padding-bottom: 60px
+	.search-col-row
+		flex-direction: column
+		.select 
+			width: 100%
+	.dashboard__section-items-list 
+		margin-left: 0 
+		margin-right: 0
+		justify-content: space-between
+	.dashboard__section-item
+		width: 48%
+		margin: 1vw 0 
+		margin-bottom: 15px
+	.dashboard__section-item__img
+		height: 30vw
+	.dashboard-section__header 
+		flex-direction: column
+	.dashboard-section__buttons
+		display: flex 
+		justify-content: flex-end 
+		width: 100%
+	.dashboard-section__title
+		align-self: flex-start
+		font-size: 22px
+		margin-bottom: 20px
+	.dashboard-section__button 
+		margin-left: 0
+	.dashboard-section__buttons 
+		display: flex 
+		justify-content: space-between
+	.page-title
+		font-size: 38px
+		line-height: 1.2
+	.instruments__header 
+		padding-top: 40px
+	.search-col-row .select.select-lg 
+		width: 100%
+	.search-col-row 
+		align-items: flex-start	
+	.education-img
+		height: 50vw
+	.education-item
+		margin-top: 20px
+		padding-bottom: 30px
+	.education-item__content
+		padding: 20px 15px
+	.education-item__title
+		font-size: 22px
+	.education-item__footer
+		flex-direction: column
+		align-items: flex-end
+		.button 
+			width: 100% 
+			margin-top: 30px
+			display: flex 
+			justify-content: center
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+	/**/
+	.venue-item__footer
+		flex-direction: column
+		align-items: flex-start
+		.button 
+			margin-top: 30px
+			width: 100%
+			justify-content: center
+			display: flex
+	.venue-item__info-row
+		flex-direction: column
+		align-items: flex-start
+	.venue-item__info-item
+		margin-bottom: 20px
+	.venue-item__info-item:first-child img
+		margin-right: 26px
+	.venue-item__info-item:last-child img
+		margin-right: 24px
+	.venue-item__title 
+		font-size: 22px
+	.venue-item__content
+		padding: 30px 15px
+	.tag 
+		padding: 5px 10px
+	.rating__stars i 
+		font-size: 13px
+		margin-right: 1px
+	.reviews-header
+		font-size: 14px
+	.content 
+		font-size: 14px
+	.venue-item .slider-image 
+		height: 50vw
+	.prev
+		left: 10px 
+	.next 
+		right: 10px
+	.prev,
+	.next 
+		width: 35px 
+		height: 35px
+	.venue-item__info-row 
+		margin-bottom: 10px
+	.venues-list 
+		padding-bottom: 0
+	.search-section 
+		padding-bottom: 30px
+	.modal-window__content
+		padding: 30px 15px
+	.input-row
+		flex-direction: column
+	.input-row .input-item 
+		width: 100%
+	.modal-review__item-content
+		flex-direction: column
+		align-items: flex-start
+	.modal-review__item-stars
+		margin-bottom: 20px
+	.modal-review__footer 
+		flex-direction: column
+		align-items: flex-start
+		.button 
+			width: 100% 
+			margin-top: 30px
+			justify-content: center
+			display: flex
+	.modal-title
+		margin-bottom: 30px
+	.rating-popup
+		max-width: 90vw
+		left: -3vw
+	.rating-popup__footer
+		flex-direction: column 
+		align-items: center 
+		.button 
+			width: 100% 
+			margin-top: 20px
+			display: flex 
+			justify-content: center
+	.reviews-col:nth-child(2)
+		.rating-popup
+			left: -60vw
+		.rating-popup:before 
+			left: 85%
+
+		
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px)
+	/**/
+	.reviews-col:nth-child(2)
+		.rating-popup
+			left: -56vw
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
