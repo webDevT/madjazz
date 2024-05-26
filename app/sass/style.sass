@@ -236,7 +236,9 @@ html .ui-button.ui-state-disabled:active
 .reviews__footer
     display: flex 
     align-items: center
-    margin-top: 5px
+    margin-top: 12px
+    position: relative
+    top: -7px
 .rating__quantity
     margin-right: 5px
 .rating__quantity
@@ -291,7 +293,7 @@ html .ui-button.ui-state-disabled:active
     position: relative
 .rating-popup
     position: absolute 
-    top: 120% 
+    top: 100% 
     left: 0
     background: #F0F6F7
     width: 415px 
@@ -359,7 +361,7 @@ html .ui-button.ui-state-disabled:active
     border-right: 12.5px solid transparent
     border-bottom: 20px solid #f0f6f7
     position: absolute 
-    top: 0 
+    top: 7px
     left: 15%
     transform: translateY(-80%)
 .rating-popup__footer
@@ -378,10 +380,13 @@ html .ui-button.ui-state-disabled:active
         margin-left: 6px
 .review-link:hover 
     color: #000
-.rating-popup
-    display: none
-.reviews-col:hover .rating-popup
-    display: block
+// .rating-popup
+//     //display: none
+//     opacity: 0
+//     transition: opacity 1s ease-in-out
+// .reviews-col:hover
+//     .rating-popup
+//         opacity: 1
 //end rating popup
 
 .tab__item 
@@ -408,19 +413,19 @@ html .ui-button.ui-state-disabled:active
     border-radius: 19px
     margin-left: auto 
     margin-right: auto
-    padding: 50px
+    padding: 30px 50px
 .modal-title
     text-align: center
     font-size: 18px 
     font-weight: 600
-    margin-bottom: 43px   
+    margin-bottom: 30px   
 .input-row
     display: flex 
     justify-content: space-between
     .input-item 
         width: 48%
 .input-item
-    margin-bottom: 25px
+    margin-bottom: 15px
 .label 
     margin-top: 0 
     margin-bottom: 12px 
@@ -582,6 +587,9 @@ rating input[type=radio]:checked ~ input[type=radio]:not(:checked)::after
 .page-title
     font-size: 60px 
     font-weight: 700
+.page-title--sm 
+    font-size: 40px
+    margin-bottom: 40px
 .checkbox-wrapper
     display: flex 
     align-items: center
@@ -797,6 +805,8 @@ rating input[type=radio]:checked ~ input[type=radio]:not(:checked)::after
     align-items: center
     padding-top: 25px
     margin-bottom: 20px
+    padding-left: 10px 
+    padding-right: 10px
     img 
         margin-bottom: 10px
     p 
@@ -828,6 +838,125 @@ rating input[type=radio]:checked ~ input[type=radio]:not(:checked)::after
 .button--red:hover 
     background: #F60606
 //end education 
+//start rating popup
+.reviews-col
+    position: relative
+.rating-popup
+    position: absolute
+    top: 100%
+    left: 0
+    background: #F0F6F7
+    width: 415px
+    max-width: 90vw
+    z-index: 999
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    padding: 20px
+    color: #000
+    opacity: 0
+    transition: opacity 0.5s ease-in-out
+    pointer-events: none
+// Когда курсор находится над элементом, показываем всплывающее окно
+.reviews-col:hover .rating-popup
+    opacity: 1
+    pointer-events: auto
+// Добавляем класс для скрытия всплывающего окна с задержкой
+.hide-popup
+    opacity: 0 !important
+    transition: opacity 0.5s ease-in-out .5s
+//end rating popup
+.sign-modal
+    .button 
+        width: 100%
+        display: flex 
+        justify-content: center 
+        align-items: center
+.new-in-text 
+    margin-top: 20px 
+    margin-bottom: 20px
+    text-align: center
+    position: relative
+    font-size: 14px
+    span
+        background: #fff 
+        padding-left: 10px 
+        padding-right: 10px
+        position: relative
+        z-index: 1
+.new-in-text:before 
+    content: ''
+    top: 50% 
+    left: 0 
+    width: 100% 
+    height: 1px 
+    position: absolute
+    background: #212529
+.button--grey
+    background: #E8ECEE
+    color: #212529
+.button--grey:hover 
+    background: #C8C9C9
+    color: #212529
+
+//start add instrument
+.hidden-block
+    display: none
+    max-width: 100%
+    .button 
+        display: flex 
+        justify-content: center 
+        align-items: center
+#add-instrument-modal
+    .modal-review__footer
+        padding-top: 20px
+    .dashboard__section-items-list
+        margin-top: 30px
+    .dashboard__section-item__img
+        width: 70% 
+        height: auto
+    .dashboard__section-item
+        margin-bottom: 30px
+        border: 1px solid #C8C9C9
+        display: flex 
+        flex-direction: column 
+        align-items: center
+        text-align: center
+        padding: 10px 
+        border-radius: 10px
+        cursor: pointer
+        width: 24%
+    .dashboard__section-item.active 
+        border: 2px solid $purple
+//end add instrument
+
+//start contact form
+.contact-form-section
+    padding-top: 100px 
+    padding-bottom: 100px
+.section-title
+    text-align: center 
+    font-weight: 600
+    margin-bottom: 50px
+.contact-form
+    width: 650px
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    padding: 50px 
+    border-radius: 15px
+    box-shadow: 0px 0px 43px 2px rgba(123, 138, 144, 0.21)
+    .button 
+        width: 100% 
+        margin-top: 30px
+        border: none
+    .select 
+        display: block 
+        width: 100%
+        margin-top: 0
+    .new-in-text
+        margin-top: 30px 
+        margin-bottom: 30px
+//end contact form
 
 @import "media"
 
