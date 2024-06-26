@@ -4,6 +4,11 @@ $('.leave-feedback').click(function(){
     $('#sign-in').fadeIn();
 })
 
+$('.write-review').click(function(){
+    $('#write-review-modal').fadeIn();
+})
+
+
 $('#open-register').click(function(){
     $('#register').fadeIn();
     $('#sign-in').fadeOut();
